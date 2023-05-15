@@ -1,23 +1,22 @@
 body{
-    overflow: scroll;
     background-color: #f1f1f1;
     font-family: 'Montserrat';
     text-align: center;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-/* ANCHOR TAGS */
-a{
-    text-decoration: none;
+.container::-webkit-scrollbar{
+    display: none;
 }
 
 /* 2CAFDF COLOR */
 /* 0115B5 DARKER COLOR */
 
 /* BUTTONS */
-
 .btn:hover{
     transform: translateY(-0.5rem);
-    transition: 0.5s;
+    transition: 0.5s ease-in-out 0.1s;
 }
 
 /* IMAGES */
@@ -26,11 +25,14 @@ img{
     height: 100%;
 }
 
-
 /* LANDING-VIDEO */
+
+#landing_section{
+    position: relative;
+}
 .landing-video{
     width: 100%;
-    height: 63rem;
+    height: crop;
     object-fit: cover;
 }
 
@@ -38,8 +40,13 @@ img{
 .fa-angle-down{
     color: #fff;
     position: absolute;
-    top: 96%;
+    bottom: 3%;
     right: 50%;
+}
+
+#info a{
+    text-decoration: none;
+
 }
 
 /* ADMISSION INFO */
@@ -124,3 +131,239 @@ img{
 .ranking-grid-border{
     border-left: 0.1rem solid #fff;
 }
+
+/* APPLY SECTION */
+#apply{
+    background-color: #2CAFDF;
+    /* font-family: 'Oswald', sans-serif; */
+    padding: 3%;
+}
+
+#apply h2{
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+#apply button{
+    border-radius: 5rem;
+}
+
+#apply button:hover{
+    background-color: #fff;
+    color: red;
+}
+
+hr{
+    margin: 2%;
+    height: 1px;
+    border-color: #fff;
+}
+
+#apply p{
+    color: red;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #fff, #fff);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: red;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
+
+/* GALLERY */
+
+.carousel-item{
+    height: 50rem;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+/* NEWS SECTION */
+
+#pricing{
+    text-align: left;
+    line-height: 3rem;
+}
+
+.pricing-heading{
+    margin: 5% auto 1% auto;
+    font-size: 4rem;
+}
+
+.pricing-para{
+    color: #8f8f8f;
+    font-size: 1.4rem;
+}
+
+.pricing-chart{
+    margin: 3%;
+}
+
+.card-header h3{
+    padding: 1%;
+}
+
+.card-body h2{
+    font-size: 4rem;
+}
+
+.card-body p{
+    color:#8f8f8f;
+    font-size: 1.4rem;
+}
+
+.card-btn{
+    margin-top: 5%;
+    width: 87%;
+}
+
+.card-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.card:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
