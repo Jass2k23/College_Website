@@ -6,6 +6,136 @@ body{
     overflow-x: hidden;
 }
 
+* {
+    --aitblue: #00b9f1
+}
+
+.sec1,
+.sec3,
+.sec5,
+.sec7 {
+    height: 70vh;
+    background-color: rgb(144, 144, 144);
+}
+
+.sec2,
+.sec4,
+.sec6,
+.sec8{
+    height: 70vh;
+    background-color: rgb(184, 31, 31);
+}
+
+.vertical-tabs {
+    position: fixed;
+    top: 35%;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    z-index: 999;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab button {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.tab a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.tab button:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--aitblue);
+}
+
+.tab button.active {
+    color: rgb(255, 255, 255);
+    background-color: var(--aitblue);
+}
+
+.tabcontent {
+    max-width: 80%;
+    background-color: white;
+    padding: 0px;
+}
+/* .tabcontent {
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+} */
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent li {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(172, 172, 172);   
+}
+.tabcontent ul{
+    list-style: none;
+}
+.tabcontent a{
+    text-decoration: none;
+}
+.tabcontent p{
+    text-align: justify;
+}
+
+/* tab1content */
+.tab1content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tab1content ul{
+    min-width: 20%;
+}
+.tab1content .tab1text{
+    padding:max(4%,10px);
+}
+
+/* tab2content */
+.tab2content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tab2dept{
+    padding:max(4%,10px);
+    padding-right: 10%;
+}
+.tab3content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+.tab3content ul{
+    padding-right: 40px;
+    min-width:max-content;
+}
+
 .container::-webkit-scrollbar{
     display: none;
 }
