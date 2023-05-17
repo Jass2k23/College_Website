@@ -28,7 +28,7 @@ window.addEventListener("scroll", function () {
         var tabs = document.querySelector(".vertical-tabs");
         var tabsHeight = tabs.offsetHeight;
 
-        var sectionTop = section.offsetTop - (window.innerHeight * 0.35);
+        var sectionTop = section.offsetTop - (window.innerHeight * 0.20);
         var sectionHeight = section.offsetHeight - tabsHeight;
         var sectionBottom = sectionTop + sectionHeight;
 
